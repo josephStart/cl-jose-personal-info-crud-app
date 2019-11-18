@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.example.app.constants.PersonalInfoConstants;
 import com.example.app.dao.PersonalInfoDao;
-import com.example.app.entity.PersonaInfo;
+import com.example.app.entity.PersonalInfo;
 
 @Component
 public class PersonalInfoDataInit implements ApplicationRunner{
@@ -22,8 +22,8 @@ public class PersonalInfoDataInit implements ApplicationRunner{
 	public void run(ApplicationArguments args) throws NoSuchAlgorithmException, NoSuchProviderException {
 		SecureRandom sr = SecureRandom.getInstance(PersonalInfoConstants.RANDOM_ALGORITHM, PersonalInfoConstants.RANDOM_PROVIDER);
 		if(personalInfoDao.count() == 0) {
-			for(int t=0; t<=15; t++) {
-				PersonaInfo pi = new PersonaInfo();
+			for(int t=1; t<=15; t++) {
+				PersonalInfo pi = new PersonalInfo();
 				pi.setName("name".concat(String.valueOf(t)));
 				pi.setLastName("lastName".concat(String.valueOf(t)));
 				pi.setAddres("addres".concat(String.valueOf(t)));

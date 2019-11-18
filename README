@@ -1,6 +1,30 @@
-TO ADD DATA TO PERSONALINFO TABLE USE THIS BODY:
+- TO LIST ALL DATAD(GET METHOD);
+
+http://localhost:8110/persona
+
+- TO FIND PERSONAL INFO BY ID(GET METHOD);
+
+http://localhost:8110/persona/{id}
+
+- TO DELETE PERSONALINFO ROW BY ID(DELETE METHOD);
+
+	http://localhost:8110/persona/delete-personal-info/4
+
+- TO ADD DATA A ROW USE THIS BODY(POST METHOD):
 
 EXAMPLE:
+{
+	"name": "name15",
+	"lastName": "lastName15",
+	"addres": "addres15",
+	"phoneNumber": 962766238,
+	"hairColour": "haircolour15"
+}
+
+
+- TO UPDATE A ROW USE THIS BODY(PUT METHOD): 
+
+ID RANGE[1-15]
 {
 	"id": 16,
 	"name": "name15",
