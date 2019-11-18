@@ -1,0 +1,11 @@
+TO ADD DATA TO PERSONALINFO TABLE USE THIS BODY:
+
+EXAMPLE:
+{
+	"id": 16,
+	"name": "name15",
+	"lastName": "lastName15",
+	"addres": "addres15",
+	"phoneNumber": 962766238,
+	"hairColour": "haircolour15"
+}
