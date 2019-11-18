@@ -12,23 +12,23 @@ import javax.persistence.Table;
 public class PersonaInfo {
 	
 	@Id
-	@Column(name = "id")
+	@Column(name = "id", nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name = "name")
+	@Column(name = "name", nullable = false)
 	private String name;
 	
-	@Column(name = "lastname")
+	@Column(name = "lastname", nullable = false)
 	private String lastName;
 	
-	@Column(name = "addres")
+	@Column(name = "addres", nullable = false)
 	private String addres;
 	
-	@Column(name = "phonenumber")
+	@Column(name = "phonenumber", nullable = false)
 	private Integer phoneNumber;
 	
-	@Column(name = "haircolour")
+	@Column(name = "haircolour", nullable = false)
 	private String hairColour;
 	
 	
