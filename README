@@ -1,3 +1,24 @@
+PRE-REQUISITES:
+
+- Installed version Maven 3.6.2 or less
+- Installed version JDK 1.8
+
+TO RUN THE PROJECT:
+
+1. In the folder project run the follow command: mvn clean install
+2. In the same folder run: mvn spring-boot:run
+
+- ACCESS TO H2 DATABASE: http://localhost:8110/h2-console
+	- LOGIN CONFIGURACION:
+
+		Saved Settings: Generic H2(Embedded)
+		Setting Name: Generic H2(Embedded)
+		
+		Driver Class: org.h2.Driver
+		JDBC URL: jdbc:h2:mem:PersonalInfoDB
+		User Name: sa
+		Password:
+
 - TO LIST ALL DATAD(GET METHOD);
 
 http://localhost:8110/persona
@@ -12,6 +33,8 @@ http://localhost:8110/persona/{id}
 
 - TO ADD DATA A ROW USE THIS BODY(POST METHOD):
 
+	http://localhost:8110/persona/add-personal-info
+
 EXAMPLE:
 {
 	"name": "name15",
@@ -24,7 +47,9 @@ EXAMPLE:
 
 - TO UPDATE A ROW USE THIS BODY(PUT METHOD): 
 
-ID RANGE[1-15]
+http://localhost:8110/persona/update-personal-info
+
+ID RANGE FOR PREDATA[1-15]
 {
 	"id": 16,
 	"name": "name15",

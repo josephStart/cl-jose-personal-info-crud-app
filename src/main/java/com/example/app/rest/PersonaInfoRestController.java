@@ -45,7 +45,7 @@ public class PersonaInfoRestController {
 		try {
 			if(pi != null) {
 				if(pi.getId() != null) {
-					responseEntity = new ResponseEntity<>(new ErrorMessage(new Date(), new Throwable("Please, don't send field 'id' on Body")), new HttpHeaders(), HttpStatus.INTERNAL_SERVER_ERROR);
+					responseEntity = new ResponseEntity<Object>(HttpStatus.NOT_ACCEPTABLE);
 				}else {
 					responseEntity = ResponseEntity.ok(personalInfoDao.save(pi));
 				}
