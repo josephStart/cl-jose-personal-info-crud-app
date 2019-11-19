@@ -1,0 +1,60 @@
+PRE-REQUISITES:
+
+- Installed version Maven 3.6.2 or less
+- Installed version JDK 1.8
+
+TO RUN THE PROJECT:
+
+1. In the folder project run the follow command: mvn clean install
+2. In the same folder run: mvn spring-boot:run
+
+- ACCESS TO H2 DATABASE: http://localhost:8110/h2-console
+	- LOGIN CONFIGURACION:
+
+		Saved Settings: Generic H2(Embedded)
+		Setting Name: Generic H2(Embedded)
+		
+		Driver Class: org.h2.Driver
+		JDBC URL: jdbc:h2:mem:PersonalInfoDB
+		User Name: sa
+		Password:
+
+- TO LIST ALL DATAD(GET METHOD);
+
+http://localhost:8110/persona
+
+- TO FIND PERSONAL INFO BY ID(GET METHOD);
+
+http://localhost:8110/persona/{id}
+
+- TO DELETE PERSONALINFO ROW BY ID(DELETE METHOD);
+
+	http://localhost:8110/persona/delete-personal-info/4
+
+- TO ADD DATA A ROW USE THIS BODY(POST METHOD):
+
+	http://localhost:8110/persona/add-personal-info
+
+EXAMPLE:
+{
+	"name": "name15",
+	"lastName": "lastName15",
+	"addres": "addres15",
+	"phoneNumber": 962766238,
+	"hairColour": "haircolour15"
+}
+
+
+- TO UPDATE A ROW USE THIS BODY(PUT METHOD): 
+
+http://localhost:8110/persona/update-personal-info
+
+ID RANGE FOR PREDATA[1-15]
+{
+	"id": 16,
+	"name": "name15",
+	"lastName": "lastName15",
+	"addres": "addres15",
+	"phoneNumber": 962766238,
+	"hairColour": "haircolour15"
+}
