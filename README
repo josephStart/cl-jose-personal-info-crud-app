@@ -1,3 +1,6 @@
+PROJECT ON GITHUB:
+https://github.com/josephStart/cl-jose-personal-info-crud-app.git
+
 PRE-REQUISITES:
 
 - Installed version Maven 3.6.2 or less
@@ -8,7 +11,7 @@ TO RUN THE PROJECT:
 1. In the folder project run the follow command: mvn clean install
 2. In the same folder run: mvn spring-boot:run
 
-- ACCESS TO H2 DATABASE: http://localhost:8110/h2-console
+- ACCESS TO H2 DATABASE(DATABASE IN-MEMORY): http://localhost:8110/h2-console
 	- LOGIN CONFIGURACION:
 
 		Saved Settings: Generic H2(Embedded)
@@ -19,7 +22,7 @@ TO RUN THE PROJECT:
 		User Name: sa
 		Password:
 
-- TO LIST ALL DATAD(GET METHOD);
+- TO LIST ALL DATA(GET METHOD);
 
 http://localhost:8110/persona
 
