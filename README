@@ -8,7 +8,7 @@ PRE-REQUISITES:
 
 TO RUN THE PROJECT:
 
-1. In the folder project run the follow command: mvn clean install
+1. In the folder project run the following command: mvn clean install
 2. In the same folder run: mvn spring-boot:run
 
 - ACCESS TO H2 DATABASE(DATABASE IN-MEMORY): http://localhost:8110/h2-console
